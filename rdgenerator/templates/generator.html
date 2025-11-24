@@ -251,7 +251,7 @@
                         <strong class="fa-stack-1x text-64">64</strong>
                     </span>
                     <span class="fa-stack fa-lg">
-                        <i class="fab fa-windows  fa-stack-2x platform-icon active" data-platform="windows-x86"></i>
+                        <i class="fab fa-windows  fa-stack-2x platform-icon" data-platform="windows-x86"></i>
                         <strong class="fa-stack-1x text-32">32</strong>
                     </span>
                     <i class="fab fa-linux platform-icon" data-platform="linux"></i>
@@ -308,8 +308,6 @@
         <div class="container">
             <div class="section">
                 <h2><i class="fas fa-shield-alt"></i> Security</h2>
-                    <label for="{{ form.runasadmin.id_for_label }}">Always run as Administrator?</label>
-                    {{ form.runasadmin }}<br><br>
                     <label for="{{ form.passApproveMode.id_for_label }}">Password Approve mode:</label>
                     {{ form.passApproveMode }}<br><br>
                     <div id="passwordRequirement" class="password-requirement">To use the hide connection window feature, please set a permanent password.</div>
