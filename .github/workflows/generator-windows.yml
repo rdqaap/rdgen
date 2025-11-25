@@ -678,6 +678,7 @@ jobs:
 
       - name: Report Status
         uses: fjogeleit/http-request-action@v1
+        continue-on-error: true
         with:
           url: ${{ env.STATUS_URL }}
           method: 'POST'
@@ -687,6 +688,7 @@ jobs:
       - name: failed
         if: failure()
         uses: fjogeleit/http-request-action@v1
+        continue-on-error: true
         with:
           url: ${{ env.STATUS_URL }}
           method: 'POST'
@@ -696,6 +698,7 @@ jobs:
       - name: failed
         if: cancelled()
         uses: fjogeleit/http-request-action@v1
+        continue-on-error: true
         with:
           url: ${{ env.STATUS_URL }}
           method: 'POST'
